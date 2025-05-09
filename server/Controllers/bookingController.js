@@ -4,11 +4,6 @@ const bookActivity = async (req, resp) => {
   try {
     const { activity } = req.body;
     const userId = req.userId;
-    // const booking = new BookingModel({
-    //   user: req.userId,
-    //   activity: activity,
-    // });
-    // await booking.save();
     const data = {
       user: userId,
       activity: activity,
