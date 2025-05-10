@@ -15,7 +15,7 @@ const registerSchema = z.object({
     .min(3, { message: "Email must be atleast of 3 characters" })
     .max(255, { message: "Email must not be more than 255 characters" }),
   phone: z
-    .string({ required_error: "Phone is required" })
+    .number({ required_error: "Phone is required" })
     .trim()
     .min(10, { message: "Phone must be atleast 10 characters" })
     .max(20, { message: "Phone must not be more than 20 characters" }),
